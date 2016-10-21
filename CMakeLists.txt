@@ -9,6 +9,7 @@ set(SOURCES ${PROJECT_SOURCE_DIR}/sources/Calculator.cpp)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+set(HEADERS ${PROJECT_SOURCE_DIR}/include/catch.hpp)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
