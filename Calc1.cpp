@@ -15,7 +15,7 @@ double multiply(float a, float b){
 double div(float a, float b){
     return double(a/b);
 }
-double pow(float a, int b){
+double pow1(float a, int b){
     float new_a = 1;
     int i =1;
     for(i = 1; i <= b; i++){
@@ -23,12 +23,12 @@ double pow(float a, int b){
     }
     return new_a;
 }
-double sqrt(float a) {
+double sqrt1(float a) {
     double n = 1;
     int i = 1;
     for(i;i<a;i++)
     {
-        if (pow(n,2) == a) break;
+        if (pow1(n,2) == a) break;
         else (n = 0.5*(n + a/n));
     }
     return n;
