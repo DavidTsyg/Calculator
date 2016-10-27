@@ -37,19 +37,19 @@ SCENARIO("Calculator div", "[div]") {
 	REQUIRE( rv == 2);
 }
 
-SCENARIO("Calculator pow", "[pow]") {
+SCENARIO("Calculator pow", "[pow1]") {
     float a = 2;
     int b = 5;
     
-    double rv = pow( a, b );
+    double rv = pow1( a, b );
     
 	REQUIRE( rv == 32);
 }
 
-SCENARIO("Calculator sqrt", "[sqrt]") {
+SCENARIO("Calculator sqrt", "[sqrt1]") {
     float a = 49;
     
-    double rv = sqrt( a );
+    double rv = sqrt1( a );
     
 	REQUIRE( rv == 7);
 }
