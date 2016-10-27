@@ -10,8 +10,8 @@ int main()
   
   cin >> a >> b;
     
-  cout << sqrt(a) << endl;
-  cout << pow(a, b) << endl;
+  cout << sqrt1(a) << endl;
+  cout << pow1(a, b) << endl;
   cout << div(a, b) << endl;
   cout << multiply(a, b) << endl;
   cout << sum(a, b) << endl;
