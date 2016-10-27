@@ -49,7 +49,7 @@ SCENARIO("Calculator pow", "[pow1]") {
 SCENARIO("Calculator sqrt", "[sqrt1]") {
     float a = 49;
     
-    double rv = sqrt1( a );
+    double rv = int sqrt1( a );
     
 	REQUIRE( rv == 7);
 }
