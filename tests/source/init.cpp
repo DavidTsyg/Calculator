@@ -46,10 +46,10 @@ SCENARIO("Calculator pow", "[pow1]") {
 	REQUIRE( rv == 32);
 }
 
-SCENARIO("Calculator sqrt1", "[sqrt1]") {
+/.SCENARIO("Calculator sqrt1", "[sqrt1]") {
     float a = 49;
     
     double rv = sqrt1(a);
     
 	REQUIRE( rv == 7);
-}
+}.\
