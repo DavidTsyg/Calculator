@@ -29,7 +29,7 @@ double sqrt1(float a) {
     for(i;i<a;i++)
     {
         if (pow1(n,2) == a) break;
-        else (n = 0.5*(n + a/n));
+        else (n = 0.5*(n + a/pow1(n, 2)));
     }
     return n;
 }
