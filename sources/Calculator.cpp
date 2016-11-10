@@ -18,13 +18,20 @@ double pow1(float a, int b){
     }
     return new_a;
 }
-double sqrt1(float a) {
-    double n = 1;
-    int i = 1;
-    for(i;i<a;i++)
+long double sqrt1(float a) {
+    float x = 1.0;
+    float y = 2.0;
+    if ( a != 1 && a != 0 )
     {
-        if (pow1(n,2) == a) break;
-        else (n = 0.5*(n + a/pow1(n, 2)));
+        while ( (y - x) > 0.000001 || (y - x) < -0.000001  )
+        {
+            x = y;
+            y = (float)(x + (float)a/x)/2;
+        }
     }
-    return n;
+    else if ( a == 1 ) y = 1;
+    else if ( a == 0 ) y = 0;
+
+
+    return y;
 }
