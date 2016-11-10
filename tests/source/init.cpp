@@ -47,8 +47,8 @@ SCENARIO("Calculator pow", "[pow1]") {
 }
 
 SCENARIO("Calculator sqrt1", "[sqrt1]"){
-    float a = 1.44;
+    float a = 0.04;
     double long rv = sqrt1(a);
-        REQUIRE ( rv == 1.2 );
+        REQUIRE ( rv == 0.2 );
 }
 
