@@ -11,7 +11,7 @@ double div(float a, float b){
     if(c != 0)
         return double(a/b);
     else
-        cout << "Нельзя делить на 0";
+        cout << "Нельзя делить на 0" << endl;
 }
 double pow1(float a, int b){
     float new_a = 1;
