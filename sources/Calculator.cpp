@@ -8,7 +8,10 @@ double multiply(float a, float b){
     return a*b;
 }
 double div(float a, float b){
-    return double(a/b);
+    if(c != 0)
+        return double(a/b);
+    else
+        cout << "Нельзя делить на 0";
 }
 double pow1(float a, int b){
     float new_a = 1;
