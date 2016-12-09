@@ -8,7 +8,7 @@ double multiply(float a, float b){
     return a*b;
 }
 double div(float a, float b){
-    if(c != 0)
+    if(b != 0)
         return double(a/b);
     else
         cout << "Нельзя делить на 0" << endl;
