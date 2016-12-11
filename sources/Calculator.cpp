@@ -9,9 +9,11 @@ double multiply(float a, float b){
 }
 double *div(float a, float b){
     if(b)
-        long double *n = new long double;
+    {
+        double *n = new double;
         *n = a/b;
         return double(n);
+    }        
     else
         return nullptr;
 }
