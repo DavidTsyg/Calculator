@@ -7,9 +7,11 @@ double sub(float a, float b){
 double multiply(float a, float b){
     return a*b;
 }
-double div(float a, float b){
-    if(b != 0)
-        return double(a/b);
+double *div(float a, float b){
+    if(b)
+        long double *n = new long double;
+        *n = a/b;
+        return double(n);
     else
         return nullptr;
 }
