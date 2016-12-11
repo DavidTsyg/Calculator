@@ -12,7 +12,7 @@ double *div(float a, float b){
     {
         double *n = new double;
         *n = a/b;
-        return double(n);
+        return n;
     }        
     else
         return nullptr;
