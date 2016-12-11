@@ -12,7 +12,9 @@ int main()
     
   cout << sqrt1(a) << endl;
   cout << pow1(a, b) << endl;
-  cout << div(a, b) << endl;
+  double *n = div(a,b);
+  if (buf) cout << "Частное: " << *buf << endl;
+    else cout << "На ноль делить нельзя." << endl;
   cout << multiply(a, b) << endl;
   cout << sum(a, b) << endl;
   cout << sub(a, b) << endl;
