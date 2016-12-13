@@ -25,9 +25,9 @@ double pow1(float a, int b){
     }
     return new_a;
 }
-long double sqrt1(float a) {
-    float x = 1.0;
-    float y = 2.0;
+long double sqrt1(double a) {
+    double x = 1.0;
+    double y = 2.0;
     if ( a != 1 && a != 0 )
     {
         while ( (y - x) > 0.000001 || (y - x) < -0.000001  )
