@@ -65,7 +65,7 @@ SCENARIO("Calculator pow.1", "[pow1]") {
 
 SCENARIO("calculator sqrt1.1", "[sqrt1]") {
     double a = -3;
-    double *rv = new double;
+    long double *rv = new long double;
     *rv = *sqrt1(a);
     
 	REQUIRE( rv == nullptr);
