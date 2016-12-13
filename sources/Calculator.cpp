@@ -1,13 +1,13 @@
-double sum(float a, float b){
+double sum(double a, double b){
     return a + b;
 }
-double sub(float a, float b){
+double sub(double a, double b){
     return a - b;
 }
-double multiply(float a, float b){
+double multiply(double a, double b){
     return a*b;
 }
-double *div(float a, float b){
+double *div(double a, double b){
     if(b)
     {
         double *n = new double;
@@ -17,7 +17,7 @@ double *div(float a, float b){
     else
         return nullptr;
 }
-double pow1(float a, int b){
+double pow1(double a, int b){
     float new_a = 1;
     int i =1;
     for(i = 1; i <= b; i++){
