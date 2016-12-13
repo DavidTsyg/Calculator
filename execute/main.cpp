@@ -6,7 +6,7 @@ using namespace std;
 
 int main() 
 {
-  float a, b;
+  double a, b;
   
   cin >> a >> b;
     
