@@ -35,18 +35,18 @@ long double *sqrt1(double a) {
             x = y;
             y = (float)(x + (float)a/x)/2;
         }
-        double *n = new double;
+        long double *n = new long double;
         *n = y;
         return n;
     }
     else if ( a == 1 )
     {
-        *n = 1;
+        *n = 1.0;
         return n;
     }    
     else if ( a == 0 )
     {    
-        *n = 0;
+        *n = 0.0;
         return n;
     }
     else if ( a < 0)
