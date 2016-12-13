@@ -28,7 +28,7 @@ double pow1(double a, int b){
 long double *sqrt1(double a) {
     float x = 1.0;
     float y = 2.0;
-    if ( a != 1 && a != 0 && a > 0)
+    if ( a != 1 && a > 0)
     {
         while ( (y - x) > 0.000001 || (y - x) < -0.000001  )
         {
