@@ -63,6 +63,13 @@ SCENARIO("Calculator pow.1", "[pow1]") {
 	REQUIRE( rv == 0.5);
 }
 
+SCENARIO("calculator sqrt1.1", "[sqrt1]") {
+    double a = -3;
+    long double *rv = new long double;
+    *rv = *sqrt1(a);
+    
+	REQUIRE( rv == nullptr );
+}
 
 SCENARIO("Calculator div.1", "[div]") {
     float a = 8;
