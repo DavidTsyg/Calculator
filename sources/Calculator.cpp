@@ -39,16 +39,8 @@ long double *sqrt1(double a) {
         *n = y;
         return n;
     }
-    else if ( a == 1 )
-    {
-        *n = 1.0;
-        return n;
-    }    
-    else if ( a == 0 )
-    {    
-        *n = 0.0;
-        return n;
-    }
+    else if ( a == 1 ) return 1;
+    else if ( a == 0 ) return 0;
     else if ( a < 0)
     {    
         return nullptr;
