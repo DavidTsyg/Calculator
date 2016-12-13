@@ -10,7 +10,9 @@ int main()
   
   cin >> a >> b;
     
-  cout << sqrt1(a) << endl;
+  long double *n = sqrt1(a);
+  if (n) cout << "Корень: " << *n << endl;
+  else cout << "Из отрицательного числа корень выделить нельзя." << endl;
   cout << pow1(a, b) << endl;
   double *n = div(a,b);
   if (n) cout << "Частное: " << *n << endl;
