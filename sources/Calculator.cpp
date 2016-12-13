@@ -28,7 +28,7 @@ double pow1(double a, int b){
     }
     else 
     {
-        for(i = 1; i <= b; i++){
+        for(i = 1; i <= -b; i++){
             new_a = new_a / a;
         }    
     }
