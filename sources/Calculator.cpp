@@ -33,7 +33,7 @@ long double sqrt1(double a) {
         while ( (y - x) > 0.000001 || (y - x) < -0.000001  )
         {
             x = y;
-            y = (double)(x + (double)a/x)/2;
+            y = (float)(x + (float)a/x)/2;
         }
     }
     else if ( a == 1 ) y = 1;
