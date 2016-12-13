@@ -18,7 +18,7 @@ double *div(double a, double b){
         return nullptr;
 }
 double pow1(double a, int b){
-    float new_a = 1;
+    double new_a = 1;
     int i =1;
     if(b >= 0)
     {
@@ -29,7 +29,7 @@ double pow1(double a, int b){
     else 
     {
         for(i = 1; i <= b; i++){
-            new_a = new_a * a;
+            new_a = new_a / a;
         }    
     }
     return new_a;
