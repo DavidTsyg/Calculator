@@ -25,7 +25,7 @@ double pow1(double a, int b){
     }
     return new_a;
 }
-long double sqrt1(double a) {
+long double *sqrt1(double a) {
     float x = 1.0;
     float y = 2.0;
     if ( a != 1 && a != 0 )
@@ -35,10 +35,23 @@ long double sqrt1(double a) {
             x = y;
             y = (float)(x + (float)a/x)/2;
         }
+        double *n = new double;
+        *n = y;
+        return n;
     }
-    else if ( a == 1 ) y = 1;
-    else if ( a == 0 ) y = 0;
-
-
-    return y;
+    else if ( a == 1 )
+    {
+        *n = 1;
+        return n;
+    }    
+    else if ( a == 0 )
+    {    
+        *n = 0;
+        return n;
+    }
+    else if ( a < 0)
+    {    
+        return nullptr;
+    }    
 }
+
