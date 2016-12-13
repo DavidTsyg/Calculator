@@ -20,8 +20,17 @@ double *div(double a, double b){
 double pow1(double a, int b){
     float new_a = 1;
     int i =1;
-    for(i = 1; i <= b; i++){
-        new_a = new_a * a;
+    if(b >= 0)
+    {
+        for(i = 1; i <= b; i++){
+            new_a = new_a * a;
+        }
+    }
+    else 
+    {
+        for(i = 1; i <= b; i++){
+            new_a = new_a * a;
+        }    
     }
     return new_a;
 }
