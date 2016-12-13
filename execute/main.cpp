@@ -14,9 +14,11 @@ int main()
   if (f) cout << "Корень: " << *f << endl;
   else cout << "Из отрицательного числа корень выделить нельзя." << endl;
   cout << pow1(a, b) << endl;
+  delete f;
   double *n = div(a,b);
   if (n) cout << "Частное: " << *n << endl;
   else cout << "На ноль делить нельзя." << endl;
+  delete n;
   cout << multiply(a, b) << endl;
   cout << sum(a, b) << endl;
   cout << sub(a, b) << endl;
