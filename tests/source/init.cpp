@@ -68,7 +68,7 @@ SCENARIO("calculator sqrt1.1", "[sqrt1]") {
     long double *rv = new long double;
     *rv = *sqrt1(a);
     
-	REQUIRE( *rv == null );
+	REQUIRE( rv == nullptr );
 }
 
 SCENARIO("Calculator div.1", "[div]") {
@@ -77,5 +77,5 @@ SCENARIO("Calculator div.1", "[div]") {
     double *rv = new double;	
     *rv = *div( a, b );
     
-	REQUIRE( *rv == null );
+	REQUIRE( rv == nullptr );
 }
