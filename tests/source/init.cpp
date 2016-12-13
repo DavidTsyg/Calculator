@@ -54,7 +54,7 @@ SCENARIO("calculator sqrt1", "[sqrt1]") {
 	REQUIRE( rv == 0.0);
 }
 
-SCENARIO("Calculator pow", "[pow1]") {
+SCENARIO("Calculator pow.1", "[pow1]") {
     float a = 2;
     int b = -1;
     
@@ -63,7 +63,7 @@ SCENARIO("Calculator pow", "[pow1]") {
 	REQUIRE( rv == 0.5);
 }
 
-SCENARIO("calculator sqrt1", "[sqrt1]") {
+SCENARIO("calculator sqrt1.1", "[sqrt1]") {
     double a = -3;
     double *rv = new double;
     *rv = *sqrt1(a);
@@ -71,7 +71,7 @@ SCENARIO("calculator sqrt1", "[sqrt1]") {
 	REQUIRE( rv == nullptr);
 }
 
-SCENARIO("Calculator div", "[div]") {
+SCENARIO("Calculator div.1", "[div]") {
     float a = 8;
     float b = 0;
     double *rv = new double;	
