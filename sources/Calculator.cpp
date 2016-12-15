@@ -13,7 +13,7 @@ double div(double a, double b){
         return a/b;
     }        
     else
-        return "IMPOSSIBLE";
+        throw "IMPOSSIBLE";
 }
 double pow1(double a, int b){
     double new_a = 1;
