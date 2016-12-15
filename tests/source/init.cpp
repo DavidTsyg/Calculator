@@ -31,7 +31,7 @@ SCENARIO("Calculator div", "[div]") {
     float a = 8;
     float b = 4;
     
-    doouble rv = div( a, b );
+    double rv = div( a, b );
     
 	REQUIRE( rv == 2);
 }
@@ -64,7 +64,8 @@ SCENARIO("Calculator pow.1", "[pow1]") {
 
 SCENARIO("calculator sqrt1.1", "[sqrt1]") {
     double a = -3;
-    string rv = sqrt1(a);
+    char rv[11];
+    rv = sqrt1(a);
     
 	REQUIRE( rv == "IMPOSSIBLE" );
 }
@@ -72,7 +73,8 @@ SCENARIO("calculator sqrt1.1", "[sqrt1]") {
 SCENARIO("Calculator div.1", "[div]") {
     float a = 8;
     float b = 0;
-    string rv = div( a, b );
+    char rv[11];
+    rv = div( a, b );
     
 	REQUIRE( rv == "IMPOSSIBLE" );
 }
