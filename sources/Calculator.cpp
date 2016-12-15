@@ -68,3 +68,4 @@ double *div(double a, double b){
     }        
     else
         return nullptr;
+}
