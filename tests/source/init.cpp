@@ -68,6 +68,7 @@ SCENARIO("calculator sqrt1.1", "[sqrt1]") {
     *rv = *sqrt1(a);
     
 	REQUIRE( rv == nullptr );
+    delete rv;
 }
 
 SCENARIO("Calculator div.1", "[div]") {
@@ -77,4 +78,5 @@ SCENARIO("Calculator div.1", "[div]") {
     *rv = *div( a, b );
     
 	REQUIRE( rv == nullptr );
+    delete rv;
 }
