@@ -22,7 +22,6 @@ SCENARIO("Calculator sub", "[sub]") {
 SCENARIO("Calculator multiply", "[multiply]") {
     float a = 3;
     float b = 4;
-    double *n = new double;
     double rv = multiply( a, b );
     
 	REQUIRE( rv == 12);
@@ -32,7 +31,7 @@ SCENARIO("Calculator div", "[div]") {
     float a = 8;
     float b = 4;
     
-    double rv = div( a, b );
+    char[11] rv = div( a, b );
     
 	REQUIRE( rv == 2);
 }
@@ -73,7 +72,7 @@ SCENARIO("calculator sqrt1.1", "[sqrt1]") {
 SCENARIO("Calculator div.1", "[div]") {
     float a = 8;
     float b = 0;
-    double rv = div( a, b );
+    char[11] rv = div( a, b );
     
 	REQUIRE( rv == "IMPOSSIBLE" );
 }
