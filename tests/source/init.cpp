@@ -65,17 +65,15 @@ SCENARIO("Calculator pow.1", "[pow1]") {
 
 SCENARIO("calculator sqrt1.1", "[sqrt1]") {
     double a = -3;
-    long double *rv = new long double;
-    *rv = *sqrt1(a);
+    double rv = sqrt1(a);
     
-	REQUIRE( rv == nullptr );
+	REQUIRE( rv == "IMPOSSIBLE" );
 }
 
 SCENARIO("Calculator div.1", "[div]") {
     float a = 8;
     float b = 0;
-    double *rv = new double;	
-    *rv = *div( a, b );
+    double rv = div( a, b );
     
-	REQUIRE( rv == nullptr );
+	REQUIRE( rv == "IMPOSSIBLE" );
 }
