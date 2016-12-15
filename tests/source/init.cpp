@@ -65,16 +65,16 @@ SCENARIO("Calculator pow.1", "[pow1]") {
 SCENARIO("calculator sqrt1.1", "[sqrt1]") {
     double a = -3;
     char rv[11];
-    rv = sqrt1(a);
+
     
-	REQUIRE( rv == "IMPOSSIBLE" );
+	REQUIRE( sqrt1(a) == "IMPOSSIBLE" );
 }
 
 SCENARIO("Calculator div.1", "[div]") {
     float a = 8;
     float b = 0;
     char rv[11];
-    rv = div( a, b );
+
     
-	REQUIRE( rv == "IMPOSSIBLE" );
+	REQUIRE( div(a, b) == "IMPOSSIBLE" );
 }
