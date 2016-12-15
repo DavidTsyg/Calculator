@@ -7,15 +7,13 @@ double sub(double a, double b){
 double multiply(double a, double b){
     return a*b;
 }
-double *div(double a, double b){
+double div(double a, double b){
     if(b)
     {
-        double *n = new double;
-        *n = a/b;
-        return n;
+        return a/b;
     }        
     else
-        return nullptr;
+        return "IMPOSSIBLE";
 }
 double pow1(double a, int b){
     double new_a = 1;
@@ -34,7 +32,7 @@ double pow1(double a, int b){
     }
     return new_a;
 }
-long double *sqrt1(double a) {
+long double sqrt1(double a) {
     float x = 1.0;
     float y = 2.0;
     if ( a != 1 && a > 0)
@@ -44,27 +42,21 @@ long double *sqrt1(double a) {
             x = y;
             y = (float)(x + (float)a/x)/2;
         }
-        long double *n = new long double;
-        *n = y;
-        return n;
+        return y;
     }
     else if ( a == 1 )
     {    
-        long double *n = new long double;
         y = 1;
-        *n = y;
-        return n;
+        return y;
     }
     else if ( a == 0 ) 
     {        
-        long double *n = new long double;
         y = 0;
-        *n = y;
-        return n;
+        return y;
     }
     else if ( a < 0)
     {    
-        return nullptr;
+        throw "IMPOSSIBLE";
     }    
 }
 
